@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-dist.css">
   <script src="https://kit.fontawesome.com/9dd8b341bf.js" crossorigin="anonymous"></script>
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
@@ -19,8 +19,17 @@
     <p class="header__info">Subscribe and get notified</p>
   </header>
   <main>
-    <form action="#" class="subscribe">
-      <input type="email" name="subscribe" class="subscribe__input" placeholder="Your Email Address" required>
+    <div class="modal">
+      <div class="modal__content">
+        <i class="fas fa-check-circle"></i>
+        <p class="modal__message"> 
+          your email sent successfully
+        </p>
+        <div class="modal__accept">Aceptar</div>
+      </div>
+    </div>
+    <form action="#" class="subscribe" id="form">
+      <input type="email" name="subscribe" class="subscribe__input" placeholder="Your Email Address">
       <p class="error">Please provide a valid email Address</p>
       <input type="submit" value="Notify Me" class="subscribe__submit">
     </form>
@@ -34,5 +43,6 @@
   </div>
   <p class="footer__copyright">&copy; Copyright Ping. All rights reserved.</p>
 </footer>
+<script src="js/scritp-dist.js"></script>
 </body>
 </html>
