@@ -15,21 +15,22 @@
 <body>
   <header class="header">
     <img src="images/logo.svg" alt="Logo" class="header__img">
-    <h1 class="header__title">We are launching soon!</h1>
+    <h1 class="header__title">We are launching <span class="text--light">soon!</span> </h1>
     <p class="header__info">Subscribe and get notified</p>
   </header>
   <main>
     <form action="#" class="subscribe">
-      <input type="text" name="subscribe" class="subscribe__text">
+      <input type="email" name="subscribe" class="subscribe__input" placeholder="Your Email Address" required>
+      <p class="error">Please provide a valid email Address</p>
       <input type="submit" value="Notify Me" class="subscribe__submit">
     </form>
     <img src="images/illustration-dashboard.png" alt="Hero image" class="hero__image">
   </main>
 <footer class="footer">
   <div class="footer__social">
-    <i class="fab fa-facebook-f"></i>
-    <i class="fab fa-twitter"></i>
-    <i class="fab fa-instagram"></i>
+    <a href="#" class="footer__link"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="footer__link"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="footer__link"><i class="fab fa-instagram"></i></a>
   </div>
   <p class="footer__copyright">&copy; Copyright Ping. All rights reserved.</p>
 </footer>

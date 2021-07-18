@@ -4,9 +4,101 @@
   --Ligh-Red: hsl(354, 100%, 66%);
   --Gray: hsl(0, 0%, 59%);
   --Dark-Blue: hsl(209, 33%, 12%);
+  --white:hsl(0, 0%, 100%);
 }
 
 body{
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 300;
+}
+.header__img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+.header{
+  padding: 3em 1em;
+}
+.header__title{
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--Gray);
+}
+.header__info{
+  color: var(--Dark-Blue);
+  text-align: center;
+  font-weight: 600;
+}
+.text--light{
+  font-weight: 700;
+  color: var(--Dark-Blue);
+}
+.subscribe{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.subscribe__input,
+.subscribe__submit{
+  outline: none;
+  padding: 0.8em;
+  border: 1px solid var(--blue);
+  border-radius: 25px;
+  text-align: center;
+}
+::placeholder{
+  color: var(--Gray);
+}
+.error{
+  margin-top: 5px;
+  text-align: center;
+  color: var(--Ligh-Red);
+  font-weight: 700;
+  opacity: 0;
+  transition:opacity 0.4s;
+}
+.error--email{
+  border: 1px solid var(--Ligh-Red);
+}
+.show--error{
+  opacity: 1;
+}
+.subscribe__submit{
+  font-weight: 700;
+  border: 0;
+  background-color: var(--blue);
+  color: var(--white);
+}
+.hero__image{
+  display: block;
+  width: 80%;
+  margin: 50px auto 0;
+}
+.footer{
+  margin: 8em auto 6em;
+}
+.footer__social{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__link{
+  text-decoration: none;
+  margin-left: 25px;
+}
+.fab{
+  font-size: 1.2rem;
+  color: var(--blue);
+}
+.footer__copyright{
+  text-align: center;
+  color: var(--Gray);
 }
